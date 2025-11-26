@@ -7,21 +7,16 @@ import Cadastro from "./pages/cadastro/Cadastro"
 
 function App() {
 
-
   return (
     <>
 
-      {/* Comentário em JSX */}
-
       <BrowserRouter>
         <Navbar />
-        
+
         <div className="min-h-[80vh]">
           <Routes>
-            {/* Importando config definida em Home.tsx */}
-            <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/cadastro" element={<Cadastro />} />
           </Routes>
         </div>
