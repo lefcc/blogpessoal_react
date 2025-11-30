@@ -1,50 +1,55 @@
+import ListaPostagens from "../../components/postagem/listapostagens/ListaPostagens"
 
 
 function Home() {
     return (
-        <div
-            className="bg-indigo-900 flex justify-center"
-        >
-
-            {/* Grid que divite a tela em 2 colunas */}
+        <>
             <div
-                className="container grid grid-cols-2 text-white"
+                className="bg-indigo-900 flex justify-center"
             >
-                {/* Coluna esquerda */}
-                <div
-                    className="flex flex-col gap-4 items-center justify-center py-4"
-                >
-                    <h2
-                        className="text-5xl font-bold"
-                    >Bem-vindo ao meu Blog Pessoal!</h2>
-                    <p
-                        className="text-xl"
-                    >Expresse aqui seus pensamentos e opiniões</p>
 
-                    {/* Link/botão*/}
+                {/* Grid que divite a tela em 2 colunas */}
+                <div
+                    className="container grid grid-cols-2 text-white"
+                >
+                    {/* Coluna esquerda */}
                     <div
-                        className="flex justify-around gap-4"
+                        className="flex flex-col gap-4 items-center justify-center py-4"
                     >
+                        <h2
+                            className="text-5xl font-bold"
+                        >Bem-vindo ao meu Blog Pessoal!</h2>
+                        <p
+                            className="text-xl"
+                        >Expresse aqui seus pensamentos e opiniões</p>
+
+                        {/* Link/botão*/}
                         <div
-                            className="rounded text-white border-white border-solid border-2 py-2 px-4"
+                            className="flex justify-around gap-4"
                         >
-                            Nova Postagem</div>
+                            <div
+                                className="rounded text-white border-white border-solid border-2 py-2 px-4"
+                            >
+                                Nova Postagem</div>
+                        </div>
                     </div>
-                </div>
 
-                {/* Coluna direita */}
-                <div
-                    className="flex justify-center"
-                >
-                    <img
-                        src="https://i.imgur.com/fyfri1v.png"
-                        alt="Imagem da Página Home"
-                        className="w-2/3"
-                    />
-                </div>
+                    {/* Coluna direita */}
+                    <div
+                        className="flex justify-center"
+                    >
+                        <img
+                            src="https://i.imgur.com/fyfri1v.png"
+                            alt="Imagem da Página Home"
+                            className="w-2/3"
+                        />
+                    </div>
 
+                </div>
             </div>
-        </div>
+
+            <ListaPostagens />
+        </>
     )
 }
 
