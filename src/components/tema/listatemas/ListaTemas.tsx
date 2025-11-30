@@ -6,6 +6,8 @@ import { AuthContext } from "../../../contexts/AuthContext";
 import { SyncLoader } from "react-spinners";
 import { buscar } from "../../../services/Service";
 
+
+
 function ListaTemas() {
 
     const navigate = useNavigate();
