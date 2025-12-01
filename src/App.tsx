@@ -12,13 +12,16 @@ import Cadastro from "./pages/cadastro/Cadastro"
 import Home from "./pages/home/Home"
 import Login from "./pages/login/Login"
 import Perfil from "./pages/perfil/Perfil"
-
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from "react-toastify"
+import AtualizarPerfil from "./pages/perfil/AtualizarPerfil"
 
 function App() {
 
   return (
     <>
       <AuthProvider>
+        <ToastContainer />
         <BrowserRouter>
           <Navbar />
           <div className="min-h-[80vh]">
@@ -35,6 +38,7 @@ function App() {
               <Route path="/editarpostagem/:id" element={<FormPostagem />} />7
               <Route path="/deletarpostagem/:id" element={<DeletarPostagem />} />
               <Route path="/perfil" element={<Perfil />} />
+              <Route path="/atualizarusuario" element={<AtualizarPerfil />} />
             </Routes>
           </div>
           <Footer />
